@@ -1,0 +1,107 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@font-face {
+    font-family: 'KhaitunDemo';
+    src: url('./public/front/KhaitunDemo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'KhaitunDemo', sans-serif;
+    overflow: hidden;
+}
+
+/* สำหรับ Chrome, Safari, Edge */
+::-webkit-scrollbar {
+    width: 5px; /* ความกว้างของ Scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; /* สีพื้นหลังของ Track */
+    border-radius: 10px; /* ทำให้มุมโค้ง */
+    display: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #fda5d5; /* สีของตัว Scroll */
+    border-radius: 100px; /* ทำให้มุมโค้ง */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #8ec5ff;
+  }
+
+
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .rotate {
+    animation: rotate 4s linear infinite;
+  }
+
+
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    background: #8ec5ff;
+    border-radius: 5px;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  /* Slider thumb styling */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #8ec5ff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .slider::-webkit-slider-thumb:hover {
+    transform: scale(1.2);
+    background: #fda5d5; /* Slightly darker on hover */
+  }
+  
+  /* Firefox styling for slider thumb */
+  .slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fda5d5;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .slider::-moz-range-thumb:hover {
+    transform: scale(1.2);
+    background: #fda5d5;
+  }
+  
+  /* For Internet Explorer */
+  .slider::-ms-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #8ec5ff;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .slider::-ms-thumb:hover {
+    transform: scale(1.2);
+    background: #8ec5ff;
+  }
+  
