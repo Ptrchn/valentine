@@ -12,7 +12,7 @@ import Img7 from '../../public/assets/images/7.png'
 
 import P1 from '../../public/assets/images/P1.jpg'
 import P2 from '../../public/assets/images/P2.jpg'
-import P3 from '../../public/assets/images/P3.jpeg'
+import P3 from '../../public/assets/images/P3.jpg'
 import uploaded_images from '../../uploaded_images.json'
 
 
@@ -23,7 +23,8 @@ import { Icon } from "@iconify/react";
 
 interface MainProps {
     
-    }
+ }
+
 const Main:React.FC<MainProps>=()=> {
 
 const [stateMain, setStateMain] = useState(0)
@@ -50,7 +51,7 @@ const [smallMedia, setSmallMedia] = useState(window.innerWidth < 640);
 useEffect(() => {
     const countYearMonthDay = () => {
       const dateNow = new Date();
-      const dateInput = new Date("2023-09-20");
+      const dateInput = new Date("2024-09-05");
 
       let years = dateNow.getFullYear() - dateInput.getFullYear();
       let months = dateNow.getMonth() - dateInput.getMonth();
@@ -130,7 +131,8 @@ useEffect(() => {
 
   const calculateTimeDifference = () => {
     const dateNow = new Date();
-    const dateStart = new Date("2023-09-20T16:30:00");
+    const dateStart = new Date("2024-09-05T21:30:00");
+
   
     // คำนวณความแตกต่างเป็น milliseconds
     const diffTime = dateNow.getTime() - dateStart.getTime();
@@ -271,7 +273,7 @@ const loadImagesSequentially3 = async () => {
                     <img src={Img2} alt="img" className='w-24 object-contain absolute sm:top-5 sm:right-[-50px] top-[-30px] right-[-50px]'/>
                     <img src={Img8} alt="img" className='sm:w-36 w-24 object-contain absolute sm:bottom-[-20px] sm:left-[-120px] bottom-[-80px] left-[-50px]'/>
                     <img 
-                    src={P1} alt="img" className='sm:w-[300px] w-48 object-cover absolute top-[55%] left-1/2 transform translate-[-50%] rounded-xl'/>
+                    src={P1} alt="img" className='sm:w-[300px] w-48  object-cover absolute top-[55%] left-1/2 transform translate-[-50%] rounded-xl'/>
                 </div>
             </>}
         {stateMain === 1 &&
@@ -292,7 +294,7 @@ const loadImagesSequentially3 = async () => {
                     <div className='w-full'>
                         <div className='text-lg text-gray-400 flex w-full'>To: Bow</div>
                         <div className='sm:h-52 sm:my-5 my-2 text-red-400 sm:text-lg flex flex-col'>
-                            &nbsp;&nbsp;&nbsp;&nbsp;สุขสันวันวาเลนไทน์นะคนเก่งของเค้า รัดเธอมากๆๆๆๆๆเลยนะ อยู่กับเค้าแบบนี้ไปทุกๆปีเลยยย ยิ้มเยอะๆนะคนสวยแฟนเค้ายิ้มแล้วน่ารักที่สุดในโลกกก
+                            &nbsp;&nbsp;&nbsp;&nbsp;สุขสันวันวาเลนไทน์นะคนเก่งของเค้า รักเธอมากๆๆๆๆๆเลยนะ อยู่กับเค้าแบบนี้ไปทุกๆปีเลยยย ยิ้มเยอะๆนะคนสวยแฟนเค้ายิ้มแล้วน่ารักที่สุดในโลกกก
                             <div className='flex items-center gap-1 w-full justify-end'>รักนะ<Icon icon="solar:heart-bold" width="16" height="16"/></div>
                         </div>
                         <div className='text-lg text-gray-400 w-full flex justify-end'>From: Deaw</div>
@@ -310,12 +312,12 @@ const loadImagesSequentially3 = async () => {
                 <div className='w-full'>
                         <div className='text-4xl text-blue-300'>PostCard</div>
                         <div className='text-2xl text-gray-400'>Happy Valentine's Day</div>
-                    <div className='text-xl text-gray-400 flex w-full'>To: Ploy</div>
+                    <div className='text-xl text-gray-400 flex w-full'>To: Bow</div>
                     <div className='sm:h-52 sm:my-5 my-2 text-red-400 sm:text-xl flex flex-col'>
-                        &nbsp;&nbsp;&nbsp;&nbsp;สุขสันวันวาเลนไทน์น้า ขอให้ปีนี้เป็นปีที่ดี ดีใจมากๆ ที่อยู่ด้วยกันมาจนถึงตอนนี้ ตั้งแต่คบกันมาเราก็ยิ้มเยอะขึ้นทุกวันเลย เพราะงั้นก็ อยู่ด้วยกันแบบนี้ไปอีกนานๆเลยนะ 
+                        &nbsp;&nbsp;&nbsp;&nbsp;สุขสันวันวาเลนไทน์นะคนเก่งของเค้า รักเธอมากๆๆๆๆๆเลยนะ อยู่กับเค้าแบบนี้ไปทุกๆปีเลยยย ยิ้มเยอะๆนะคนสวยแฟนเค้ายิ้มแล้วน่ารักที่สุดในโลกกก
                         <div className='flex items-center gap-1 w-full justify-end'>รักนะ<Icon icon="solar:heart-bold" width="16" height="16"/></div>
                     </div>
-                    <div className='text-xl text-gray-400 w-full flex justify-end'>From: Champ</div>
+                    <div className='text-xl text-gray-400 w-full flex justify-end'>From: Deaw</div>
                 </div>
             </div>
         </div>}
@@ -333,8 +335,8 @@ const loadImagesSequentially3 = async () => {
                         <div className='sm:text-3xl text-xl text-blue-300 sm:mt-10 break-words text-center'>How long have you been together?</div>
                             <div className=' text-pink-300 sm:mt-5 flex gap-3 sm:items-end sm:flex-row flex-col'>
                                 <div className='flex flex-row items-end gap-2'>
-                                    <div className='sm:text-5xl text-4xl'>{countYear}</div>
-                                    <div className='text-xl'>Years</div>
+                                    {/* <div className='sm:text-5xl text-4xl'>{countYear}</div>
+                                    <div className='text-xl'>Years</div> */}
                                 </div>
                                 <div className='flex flex-row items-end gap-2'>
                                     <div className='sm:text-5xl text-4xl'>{countMonth}</div>

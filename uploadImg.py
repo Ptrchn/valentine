@@ -5,7 +5,7 @@ from supabase import create_client, Client
 
 # ตั้งค่าการเชื่อมต่อ Supabase
 SUPABASE_URL = 'https://ksuqhrjkgtswuaybrnfa.supabase.co'
-SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzdXFocmprZ3Rzd3VheWJybmZhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mzk0NDE4ODQsImV4cCI6MjA1NTAxNzg4NH0.qFvUgsm4oc8SSLQrYvQMb7gLPrPkaGRioJtHnrq43qE'
+SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzdXFocmprZ3Rzd3VheWJybmZhIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTczOTQ0MTg4NCwiZXhwIjoyMDU1MDE3ODg0fQ.bBDWLwZwr4W-lUNKCohPbCRFKpt9CHxDBmxI24rnqpQ'
 BUCKET_NAME = 'photos'
 
 # สร้าง Client
