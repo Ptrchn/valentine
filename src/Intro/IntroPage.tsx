@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react'
+import React,{ useState, } from 'react'
 import { Icon } from "@iconify/react";
 import Img4 from '../../public/assets/images/4.png'
 import Img6 from '../../public/assets/images/6.png'
@@ -25,10 +25,10 @@ const IntroPage: React.FC<IntroPageProps>=({password, setPassword, setStatePage,
     const [onLoad, setOnLoad] = useState(false)
     const [stateQuestion, setStateQuestion] = useState(0)
     const Question = ['รักเรามั้ยย', 'เอาอีก', 'เอาอีกกกกกกกก', 'รักเราแค่ไหนเอ่ย', 'แค่ไหนนะ', 'จริงอะป่าวววว']
-    const Choice1 = ['รัก', 'ร้ากกกกกกกก', 'ร้ากกกกกกกกกกกกกก', 'ที่สุด', 'ที่สุดดดดดดดดด ดดดด', 'แน่นอนนนน']
-    const Choice2 = ['ร้ากกกกก', 'ร้ากกกกกกกกกกกก', 'ร้ากกกกกกกกกกกกกกกกกกกกกกกกกกกก', 'ที่สุดดดดดดดด', 'ที่สุดดดดดดดด ดดดดดดดดดดด ดด', 'จริงที่สุดดดดดในโลกเลย (นอกโลกก็ด้วย)']
+    const Choice1 = ['รัก', 'ร้ากกกกกกกก', 'ร้ากกกกกกกกกกกกกก', 'ที่สุดดดดดดดดดด', 'ที่สุดดดดดดด', 'แน่นอนนนน']
+    const Choice2 = ['ร้ากกกกก', 'ร้ากกกกกกกกกกกก', 'ร้ากกกกกกกกกกกกกกกกกกกกกกกกกกกก', 'ที่สุดในโลกกกกกกก', 'ที่สุดดดดดดดดดดดด', 'จริงที่สุดดดดดในโลกเลยยยยย']
     const [answer, setAnswer] = useState([{
-        question: 'รักเรามั้ยย',
+        question: 'รักเค้ามั้ยย',
         choice1: 'รัก',
         choice2: 'ร้ากกกกก',
         answer: ''
@@ -43,19 +43,19 @@ const IntroPage: React.FC<IntroPageProps>=({password, setPassword, setStatePage,
         choice2: 'ร้ากกกกกกกกกกกกกกกกกกกกกกกกกกกก',
         answer: ''
     },{
-        question: 'รักเราแค่ไหนเอ่ย',
-        choice1: 'ที่สุด',
-        choice2: 'ที่สุดดดดดดดด',
+        question: 'รักเค้าแค่ไหนนนน',
+        choice1: 'ที่สุดดดดดดดดดด',
+        choice2: 'ที่สุดในโลกกกกกกก',
         answer: ''
     },{
         question: 'แค่ไหนนะ',
         choice1: 'ที่สุดดดดดดด',
-        choice2: 'ที่สุดดดดดดด ดดดด',
+        choice2: 'ที่สุดดดดดดดดดดดด',
         answer: ''
     },{
         question: 'จริงอะป่าวววว',
         choice1: 'แน่นอนนนน',
-        choice2: 'จริงที่สุดดดดดในโลกเลย (นอกโลกก็ด้วย)',
+        choice2: 'จริงที่สุดดดดดในโลกเลยยยยย',
         answer: ''
     },{
         question: 'ข้อสุดท้ายละ มีอะไรอยากจะฝากบอกเค้าไหม?',
@@ -85,12 +85,12 @@ const handleSetanswer = ({ index, Choice }: { index: number; Choice: number }) =
   const handleSentEmail = () => {
     setOnLoad(true);
     const templateParams = {
-      to_email: "sonesambi@gmail.com",
+      to_email: "deawandnathai@gmail.com",
       message: JSON.stringify(answer, null, 2),
     };
   
     emailjs
-      .send("service_4u4tf3u", "template_kgzvw2l", templateParams, "uVjCfvytN8JqCgx5m")
+      .send("service_6yftccc", "template_x6l69ic", templateParams, "cH5jRN-6CAwY379km")
       .then((response) => {
         console.log("Email sent!", response);
         setOnLoad(false);
@@ -106,7 +106,7 @@ const handleSetanswer = ({ index, Choice }: { index: number; Choice: number }) =
   };
 
   const handlaSentPassword = () => {
-    if(parseInt(password.day) === 20 && parseInt(password.month) === 9 && parseInt(password.year) === 2023 && canOpen){
+    if(parseInt(password.day) === 5 && parseInt(password.month) === 9 && parseInt(password.year) === 2024 ){
       setStateLock(false)
       setStateBanner(true)
       setTimeout(() => {
@@ -118,49 +118,49 @@ const handleSetanswer = ({ index, Choice }: { index: number; Choice: number }) =
 
 
 
-  const [countDown, setCountDown] = useState('');
-  const [canOpen, setCanOpen] = useState(false);
+//   const [countDown, setCountDown] = useState('');
+//   const [canOpen, setCanOpen] = useState(false);
   
-  useEffect(() => {
-    const valentine = Date.UTC(2025, 1, 14, 0, 0, 0);
+//   useEffect(() => {
+//     const valentine = Date.UTC(2025, 1, 14, 0, 0, 0);
   
-    const updateCountdown = () => {
-        const now = Date.UTC(
-            new Date().getFullYear(), 
-            new Date().getMonth(), 
-            new Date().getDate(), 
-            new Date().getHours(), 
-            new Date().getMinutes(), 
-            new Date().getSeconds()
-          );
-      const distance = valentine - now;
+//     const updateCountdown = () => {
+//         const now = Date.UTC(
+//             new Date().getFullYear(), 
+//             new Date().getMonth(), 
+//             new Date().getDate(), 
+//             new Date().getHours(), 
+//             new Date().getMinutes(), 
+//             new Date().getSeconds()
+//           );
+//       const distance = valentine - now;
   
-      if (distance < 0) {
-        setCanOpen(true);
-        setCountDown("เปิดได้แล้ว!");
-        return;
-      }
+//       if (distance < 0) {
+//         setCanOpen(true);
+//         setCountDown("เปิดได้แล้ว!");
+//         return;
+//       }
   
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+//       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+//       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+//       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+//       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   
-      let countdownString = 'ยังไม่ถึงเวลานะ : ';
-      if (days > 0) countdownString += `${days} วัน `;
-      if (hours > 0 || days > 0) countdownString += `${hours} ชั่วโมง `;
-      if (minutes > 0 || hours > 0 || days > 0) countdownString += `${minutes} นาที `;
-      countdownString += `${seconds} วินาที`;
+//       let countdownString = 'ยังไม่ถึงเวลานะ : ';
+//       if (days > 0) countdownString += `${days} วัน `;
+//       if (hours > 0 || days > 0) countdownString += `${hours} ชั่วโมง `;
+//       if (minutes > 0 || hours > 0 || days > 0) countdownString += `${minutes} นาที `;
+//       countdownString += `${seconds} วินาที`;
   
-      setCountDown(countdownString);
-    };
+//       setCountDown(countdownString);
+//     };
   
-    updateCountdown(); // Initial call
-    const interval = setInterval(updateCountdown, 1000); // Update every second
+//     updateCountdown(); // Initial call
+//     const interval = setInterval(updateCountdown, 1000); // Update every second
   
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, []);
+//     return () => clearInterval(interval); // Cleanup interval on unmount
+//   }, []);
 
 
 
@@ -172,7 +172,7 @@ const handleSetanswer = ({ index, Choice }: { index: number; Choice: number }) =
                     <div className='w-full flex justify-end items-center'>
                         <div className='h-10 flex justify-center items-center rounded-full shadow-sm'>
                             <div className={`h-10 overflow-hidden duration-300 flex justify-end items-center text-blue-300 ${stateHint?'w-56':'w-0 opacity-0'}`}>
-                                <div className=' shrink-0 flex gap-2'><Icon icon="solar:heart-bold" width="24" height="24" /> Hint : วันครบรอบของเราไง </div>
+                                <div className=' shrink-0 flex gap-2'><Icon icon="solar:heart-bold" width="24" height="24" /> Hint : เราคบกันวันที่เท่าไหร่ค้าบ </div>
                             </div> 
                             <div 
                             onMouseEnter={() => setStateHint(true)}
@@ -217,7 +217,7 @@ const handleSetanswer = ({ index, Choice }: { index: number; Choice: number }) =
                             <Icon icon="ph:lock-key-fill" width="25" height="25" />
                             <div>ปลดล็อค</div>
                         </div>
-                        <div className='text-blue-300'>{countDown}</div>
+                        {/* <div className='text-blue-300'>{countDown}</div> */}
                     </div>
                 </>
                 :<>

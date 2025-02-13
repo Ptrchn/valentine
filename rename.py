@@ -1,6 +1,6 @@
 import os
 
-folder_path = "C:/Users/sones/Desktop/ValentineWeb/public/images"
+folder_path = "C:/Users/COJ/OneDrive/Documents/GitHub/valentine/src/Images"
 new_prefix = "image" 
 
 # ดึงไฟล์ทั้งหมดจากโฟลเดอร์

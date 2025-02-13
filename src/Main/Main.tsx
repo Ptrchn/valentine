@@ -290,12 +290,12 @@ const loadImagesSequentially3 = async () => {
                 
                 <div className='flex flex-col gap-0 sm:gap-3 w-full'>
                     <div className='w-full'>
-                        <div className='text-lg text-gray-400 flex w-full'>To: Ploy</div>
+                        <div className='text-lg text-gray-400 flex w-full'>To: Bow</div>
                         <div className='sm:h-52 sm:my-5 my-2 text-red-400 sm:text-lg flex flex-col'>
-                            &nbsp;&nbsp;&nbsp;&nbsp;สุขสันวันวาเลนไทน์น้า ขอให้ปีนี้เป็นปีที่ดี ดีใจมากๆ ที่อยู่ด้วยกันมาจนถึงตอนนี้ ตั้งแต่คบกันมาเราก็ยิ้มเยอะขึ้นทุกวันเลย เพราะงั้นก็ อยู่ด้วยกันแบบนี้ไปอีกนานๆเลยนะ 
+                            &nbsp;&nbsp;&nbsp;&nbsp;สุขสันวันวาเลนไทน์นะคนเก่งของเค้า รัดเธอมากๆๆๆๆๆเลยนะ อยู่กับเค้าแบบนี้ไปทุกๆปีเลยยย ยิ้มเยอะๆนะคนสวยแฟนเค้ายิ้มแล้วน่ารักที่สุดในโลกกก
                             <div className='flex items-center gap-1 w-full justify-end'>รักนะ<Icon icon="solar:heart-bold" width="16" height="16"/></div>
                         </div>
-                        <div className='text-lg text-gray-400 w-full flex justify-end'>From: Champ</div>
+                        <div className='text-lg text-gray-400 w-full flex justify-end'>From: Deaw</div>
                     </div>
                 </div>
             </div>

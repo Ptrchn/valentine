@@ -18,7 +18,7 @@ const Banner: React.FC<BannerProps>=({dataBanner, setDataBanner, stateBanner, se
         setTimeout(() => {
             setStateBanner(false)
         }, 3000);
-    }, [dataBanner])
+    }, [dataBanner, setDataBanner, setStateBanner])
 
   return (
     <>
