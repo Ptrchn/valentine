@@ -64,11 +64,10 @@ useEffect(() => {
         days += prevMonth.getDate();
       }
 
-      // ถ้าเดือนติดลบ ให้ย้อนปี
-    //   if (months < 0) {
-    //     years -= 1;
-    //     months += 12;
-    //   }
+      //ถ้าเดือนติดลบ ให้ย้อนปี
+      if (months < 0) {
+        months += 12;
+      }
 
       setCountMonth(months);
       setCountDay(days);
