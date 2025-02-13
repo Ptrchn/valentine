@@ -42,7 +42,7 @@ const handlePopup = () => {
     setSelectImgOn(false)
     setTimeout(()=>{setSelectImg(null)}, 300)
 }
-const [countYear, setCountYear] = useState(0)
+
 const [countMonth, setCountMonth] = useState(0)
 const [countDay, setCountDay] = useState(0)
 const [smallMedia, setSmallMedia] = useState(window.innerWidth < 640);
@@ -53,7 +53,7 @@ useEffect(() => {
       const dateNow = new Date();
       const dateInput = new Date("2024-09-05");
 
-      let years = dateNow.getFullYear() - dateInput.getFullYear();
+    //   let years = dateNow.getFullYear() - dateInput.getFullYear();
       let months = dateNow.getMonth() - dateInput.getMonth();
       let days = dateNow.getDate() - dateInput.getDate();
 
@@ -65,12 +65,11 @@ useEffect(() => {
       }
 
       // ถ้าเดือนติดลบ ให้ย้อนปี
-      if (months < 0) {
-        years -= 1;
-        months += 12;
-      }
+    //   if (months < 0) {
+    //     years -= 1;
+    //     months += 12;
+    //   }
 
-      setCountYear(years);
       setCountMonth(months);
       setCountDay(days);
     };
