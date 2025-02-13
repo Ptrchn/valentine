@@ -12,7 +12,7 @@ BUCKET_NAME = 'photos'
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ตั้งค่าโฟลเดอร์ที่เก็บรูป
-FOLDER_PATH = "./public/assets/photos"  # โฟลเดอร์ที่เก็บรูปในเครื่อง
+FOLDER_PATH = "C:/Users/COJ/OneDrive/Documents/GitHub/valentine/src/Images"  # โฟลเดอร์ที่เก็บรูปในเครื่อง
 UPLOAD_PATH = "uploads/"  # โฟลเดอร์ใน Supabase Storage
 OUTPUT_JSON_FILE = "uploaded_images.json"  # ไฟล์ JSON ที่จะบันทึก
 
